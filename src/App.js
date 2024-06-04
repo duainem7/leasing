@@ -1,10 +1,9 @@
 import React, {useState, useEffect} from "react"
-import logo from './logo.svg';
 import './App.css';
 import Navigation from './nav'
 import Swipe from './Swiper'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Keyboard, Mousewheel, EffectCoverflow } from 'swiper/modules';
+
 import ReactLoading from 'react-loading'
 
 
