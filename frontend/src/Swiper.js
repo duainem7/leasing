@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y, Keyboard } from 'swiper/modules';
 import Image from 'react-bootstrap/Image';
 import image_one from './images/im1.jpg'
 import image_two from './images/im2.jpg'
@@ -19,31 +20,38 @@ import image_fifteen from './images/im15.jpg'
 
 // Import Swiper styles
 import 'swiper/css';
-
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css/keyboard';
  function Swipe(){
   return (
     <Swiper
-        style={{width: '70vw', height: '80vh'}}
+    modules={[Navigation, Pagination, Scrollbar, A11y, Keyboard]}
+        style={{width: '70vw', height: '80vh', marginBottom: '35px'}}
       spaceBetween={50}
       slidesPerView={1}
+      navigation
+      pagination={{clickable: true}}
+      scrollbar={{draggable: true}}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide><Image src={image_one} /></SwiperSlide>
-      <SwiperSlide><Image src={image_two} /></SwiperSlide>
-      <SwiperSlide><Image src={image_three} /></SwiperSlide>
-      <SwiperSlide><Image src={image_four} /></SwiperSlide>
-      <SwiperSlide><Image src={image_five} /></SwiperSlide>
-      <SwiperSlide><Image src={image_six} /></SwiperSlide>
-      <SwiperSlide><Image src={image_seven} /></SwiperSlide>
-      <SwiperSlide><Image src={image_eight} /></SwiperSlide>
-      <SwiperSlide><Image src={image_nine} /></SwiperSlide>
-      <SwiperSlide><Image src={image_ten} /></SwiperSlide>
-      <SwiperSlide><Image src={image_eleven} /></SwiperSlide>
-      <SwiperSlide><Image src={image_twelve} /></SwiperSlide>
-      <SwiperSlide><Image src={image_thirteen} /></SwiperSlide>
-      <SwiperSlide><Image src={image_fourteen} /></SwiperSlide>
-      <SwiperSlide><Image src={image_fifteen} /></SwiperSlide>
+      <SwiperSlide><Image src={image_one} fluid/></SwiperSlide>
+      <SwiperSlide><Image src={image_two} fluid/></SwiperSlide>
+      <SwiperSlide><Image src={image_three} fluid/></SwiperSlide>
+      <SwiperSlide><Image src={image_four} fluid/></SwiperSlide>
+      <SwiperSlide><Image src={image_five} fluid/></SwiperSlide>
+      <SwiperSlide><Image src={image_six} fluid/></SwiperSlide>
+      <SwiperSlide><Image src={image_seven} fluid/></SwiperSlide>
+      <SwiperSlide><Image src={image_eight} fluid/></SwiperSlide>
+      <SwiperSlide><Image src={image_nine} fluid/></SwiperSlide>
+      <SwiperSlide><Image src={image_ten} fluid/></SwiperSlide>
+      <SwiperSlide><Image src={image_eleven} fluid/></SwiperSlide>
+      <SwiperSlide><Image src={image_twelve} fluid/></SwiperSlide>
+      <SwiperSlide><Image src={image_thirteen} fluid/></SwiperSlide>
+      <SwiperSlide><Image src={image_fourteen} fluid/></SwiperSlide>
+      <SwiperSlide><Image src={image_fifteen} fluid/></SwiperSlide>
     
       
     </Swiper>
