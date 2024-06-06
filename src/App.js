@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react"
 import './App.css';
 import Navigation from './nav'
-import Swipe from './Swiper'
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import ReactLoading from 'react-loading'
@@ -37,7 +37,7 @@ function App() {
   return (
     <div >
     <Navigation />
-    <Swipe />
+    
     <SecondSec />
     <ThirdSec />
     

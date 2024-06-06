@@ -16,7 +16,7 @@ function SecondSec(){
     return(
         <>
         <Container  fluid="md" style={{ border: "3px solid pink", padding: "0"}}>
-        <Row fluid style={{display: "flex", justifyContent: "space-between", margin: "0", padding: "0"}}><Col style={{margin: "0", padding: "0"}}><Card className="cardseccards" style={{border: "none", width: "28.88vw", backgroundColor: "skyblue", borderRadius: "0", margin:"0", padding: "0"}}>
+        <Row fluid style={{display: "flex", justifyContent: "space-between", margin: "0", padding: "0"}}><Col md style={{margin: "0", padding: "0"}}><Card className="cardseccards" style={{border: "none", width: "28.88vw", backgroundColor: "skyblue", borderRadius: "0", margin:"0", padding: "0"}}>
             <Card.Body>
                 <Card.Title>
                 <h1>
@@ -43,7 +43,7 @@ function SecondSec(){
             </Card.Body>
 
             </Card></Col>
-            <Col style={{margin: "0", padding: "0"}}>
+            <Col md style={{margin: "0", padding: "0"}}>
             <div style={{width: "59.75vw", height: "119.6vh", margin: "0", padding: "0", overflow: "hidden", border: "1px solid orange"}}>
             <Image src={image_two} />
             </div>
