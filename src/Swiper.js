@@ -29,7 +29,7 @@ import 'swiper/css/thumbs';
  function Swipe(){
   return (
     <Swiper
-    modules={[Navigation, Pagination, Scrollbar, A11y, Keyboard, EffectCards, Thumbs]}
+    modules={[Navigation, Pagination, A11y, Keyboard, EffectCards, Thumbs]}
         style={{width: '63vw', height: '65vh', marginBottom: '35px'}}
       spaceBetween={50}
       slidesPerView={1}
