@@ -15,10 +15,18 @@ import Image from 'react-bootstrap/Image';
 function ThirdSec(){
     return(
         <>
-        <Container style={{margin: "0 auto"}}>
-        <Row>
-            <Col md><Image src={image_three} fluid/></Col>
-            <Col md><Card>
+        <Container style={{margin: "0", padding: "0"}}>
+        <Row fluid style={{display: "flex", justifyContent: "space-between", margin: "0", padding: "0"}}>
+            
+                
+            <Col md style={{margin: "0", padding: "0"}}>
+            <div className="firstsecpic" style={{ margin: "0", padding: "0", overflow: "hidden"}}>
+            <Image src={image_three} />
+            </div>
+            </Col>
+
+
+            <Col md style={{margin: "0", padding: "0"}}><Card className="cardseccards" style={{border: "none", backgroundColor: "skyblue", borderRadius: "0", margin:"0", padding: "0"}}>
             <Card.Body>
                 <Card.Title>
                 <h1>

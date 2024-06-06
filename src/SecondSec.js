@@ -17,7 +17,7 @@ import Image from 'react-bootstrap/Image';
 function SecondSec(){
     return(
         <>
-        <Container className="firstcont"  fluid="md" style={{ border: "3px solid pink", padding: "0"}}>
+        <Container className="firstcont"  fluid="md" style={{margin: "0", padding: "0"}}>
         <Row fluid style={{display: "flex", justifyContent: "space-between", margin: "0", padding: "0"}}><Col md style={{margin: "0", padding: "0"}}><Card className="cardseccards" style={{border: "none", backgroundColor: "skyblue", borderRadius: "0", margin:"0", padding: "0"}}>
             <Card.Body>
                 <Card.Title>
@@ -46,8 +46,8 @@ function SecondSec(){
 
             </Card></Col>
             <Col md style={{margin: "0", padding: "0"}}>
-            <div className="firstsecpic" style={{ margin: "0", padding: "0", overflow: "hidden", border: "1px solid orange"}}>
-            <Image src={image_two} fluid/>
+            <div className="firstsecpic" style={{ margin: "0", padding: "0", overflow: "hidden"}}>
+            <Image src={image_two} />
             </div>
             </Col>
             </Row>
