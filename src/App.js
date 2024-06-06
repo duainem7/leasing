@@ -5,6 +5,8 @@ import Swipe from './Swiper'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import ReactLoading from 'react-loading'
+import SecondSec from './SecondSec'
+import ThirdSec from './ThirdSec'
 
 
 function App() {
@@ -35,7 +37,9 @@ function App() {
   return (
     <div >
     <Navigation />
-    <Swipe />
+    <SecondSec />
+    <ThirdSec />
+    
 
 
     </div>

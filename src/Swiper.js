@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Keyboard } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, Keyboard, EffectCards, Thumbs } from 'swiper/modules';
 import Image from 'react-bootstrap/Image';
 import image_one from './images/im1.jpg'
 import image_two from './images/im2.jpg'
@@ -24,16 +24,19 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/keyboard';
+import 'swiper/css/effect-cards';
+import 'swiper/css/thumbs';
  function Swipe(){
   return (
     <Swiper
-    modules={[Navigation, Pagination, Scrollbar, A11y, Keyboard]}
-        style={{width: '70vw', height: '80vh', marginBottom: '35px'}}
+    modules={[Navigation, Pagination, Scrollbar, A11y, Keyboard, EffectCards, Thumbs]}
+        style={{width: '63vw', height: '65vh', marginBottom: '35px'}}
       spaceBetween={50}
       slidesPerView={1}
       navigation
       pagination={{clickable: true}}
-      scrollbar={{draggable: true}}
+      effect='cards'
+      thumbs
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
