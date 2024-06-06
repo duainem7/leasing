@@ -16,7 +16,7 @@ function SecondSec(){
     return(
         <>
         <Container className="no-gutters" fluid="md" >
-        <Row><Card style={{border: "none", width: "28.88vw", backgroundColor: "skyblue", borderRadius: "0", margin:"0 auto", padding: "0"}}>
+        <Row><Card className="cardseccards" style={{border: "none", width: "28.88vw", backgroundColor: "skyblue", borderRadius: "0", margin:"0 auto", padding: "0"}}>
             <Card.Body>
                 <Card.Title>
                 <h1>
