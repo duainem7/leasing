@@ -53,9 +53,7 @@ function SecondSec(){
     )
 }
 
-{/* <Col  style={{margin: "0 auto",padding: "0 auto", width: "28.88vw", border: '3px solid green'}}></Col> */}
 
-{/* <Col style={{margin: "0 auto", width:"70vw", border: "3px solid orange"}}></Col> */}
 
 
 export default SecondSec
