@@ -1,7 +1,7 @@
 import React from "react"
 import image_two from "./images/im2.jpg"
 import Card from 'react-bootstrap/Card'
-
+import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Image from 'react-bootstrap/Image';
@@ -15,8 +15,8 @@ import Image from 'react-bootstrap/Image';
 function SecondSec(){
     return(
         <>
-        <Container className="no-gutters" fluid="md" >
-        <Row><Card className="cardseccards" style={{border: "none", width: "28.88vw", backgroundColor: "skyblue", borderRadius: "0", margin:"0 auto", padding: "0"}}>
+        <Container  fluid="md" style={{ border: "3px solid pink", padding: "0"}}>
+        <Row fluid style={{display: "flex", justifyContent: "space-between", margin: "0", padding: "0"}}><Col style={{margin: "0", padding: "0"}}><Card className="cardseccards" style={{border: "none", width: "28.88vw", backgroundColor: "skyblue", borderRadius: "0", margin:"0", padding: "0", border: "3px solid green"}}>
             <Card.Body>
                 <Card.Title>
                 <h1>
@@ -42,10 +42,12 @@ function SecondSec(){
                 </Card.Text>
             </Card.Body>
 
-            </Card>
-            <div style={{width: "60vw", height: "115vh", border: "3px solid orange", margin: "0 auto", padding: "0"}}>
-            <Image src={image_two} fluid />
+            </Card></Col>
+            <Col style={{margin: "0", padding: "0"}}>
+            <div style={{width: "59.75vw", height: "119.6vh", margin: "0", padding: "0", overflow: "hidden", border: "1px solid orange"}}>
+            <Image src={image_two} />
             </div>
+            </Col>
             </Row>
             
         </Container>
