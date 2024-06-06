@@ -1,7 +1,7 @@
 import React from "react"
 import image_two from "./images/im2.jpg"
 import Card from 'react-bootstrap/Card'
-import Col from 'react-bootstrap/Col';
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Image from 'react-bootstrap/Image';
