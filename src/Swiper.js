@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Keyboard, EffectCards, Thumbs } from 'swiper/modules';
+import { Navigation, Pagination, A11y, Keyboard, EffectCards, Thumbs } from 'swiper/modules';
 import Image from 'react-bootstrap/Image';
 import image_one from './images/im1.jpg'
 import image_two from './images/im2.jpg'
